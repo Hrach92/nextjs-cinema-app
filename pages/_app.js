@@ -8,12 +8,12 @@ function MyApp({ Component, pageProps }) {
   const [filter, setFilter] = useState('')
   return <>
     <Layout >
-      <div className='form'>
+    <div className='form'>
         <div><input className='input' type='text' placeholder='Search...' value={text} onChange={(e) => {
           return setText(e.target.value)
         }} /></div>
         <button className='btn' onClick={()=>{
-          return setFilter(text),setText('')}}><Link href='/search'><BiSearchAlt/></Link></button>
+          return setFilter(text),setText('')}}><Link href='/search'>🔍︎</Link></button>
       </div>
       <Component {...pageProps} filter={filter} />
     </Layout>
