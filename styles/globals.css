@@ -1,0 +1,35 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(169, 174, 243);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.form{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 3px;
+  right: 15px;
+  border: 1px solod red;
+}
+.btn{
+  padding-top: 4px;
+  font-size: 1.1em;
+  background-color: rgb(255, 255, 255,0);
+  border: 0;
+}
+.input{
+  border-radius: 10px;
+  border: 0;
+}
