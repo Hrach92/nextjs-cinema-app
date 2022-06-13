@@ -1,4 +1,4 @@
-import MovieInfo from "../components/MovieInfo"
+
 import movieInfo from '../../styles/Movie.module.css'
 import { BiPlay } from 'react-icons/bi'
 import {AiFillStar} from 'react-icons/ai'
