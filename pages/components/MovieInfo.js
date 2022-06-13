@@ -17,11 +17,11 @@ const MovieInfo = ({ movieInformation, list }) => {
                 <span className={unclicked?movieInfo.star:null} onClick={()=>{
                     return setUnclicked(false),setVoteCount((vote_count+1))
                 }}>
-                <AiFillStar className={movieInfo.stars} style={vote_average>2?{color:'yellow'}:null}/>
-                <AiFillStar style={vote_average>3.5?{color:'yellow'}:null}/>
-                <AiFillStar style={vote_average>5.5?{color:'yellow'}:null}/>
-                <AiFillStar style={vote_average>7.5?{color:'yellow'}:null}/>
-                <AiFillStar style={vote_average>9?{color:'yellow'}:null}/>
+                <span className={movieInfo.stars} style={vote_average>2?{color:'yellow'}:null}>☆</span>
+                <span style={vote_average>3.5?{color:'yellow'}:null}>☆</span>
+                <span style={vote_average>5.5?{color:'yellow'}:null}>☆</span>
+                <span style={vote_average>7.5?{color:'yellow'}:null}>☆</span>
+                <span style={vote_average>9?{color:'yellow'}:null}>☆</span>
                 </span>
                 <span>{vote_average}</span>/<span>{voteCount}</span></div>
                 <div>{release_date}</div></div>
